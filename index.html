@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                display: flex;
+                height: 100vh;
+                width: 100%;
+                background-color: rgb(31, 10, 10);
+                color: white;
+                align-items: center;
+                justify-content: center;
+            }
+            .box {
+                display: flex;
+                flex-direction: column;
+                width: 1000px;
+                height: auto;
+                background-color:rgb(53, 21, 21);
+                border-radius: 20px;
+                box-shadow: brown -3px -3px 20px;
+                align-items: center;
+            }
+            
+
+        </style>
+    </head>
+
+    <body>
+        <div class="box"><h1 style=" font-size:20px ; margin-bottom: 8px; margin-top: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-shadow: 1px 1px 2px;">Random Quotes for You.</h1>
+        <button onclick="fun()" style="width: 80px; height: 40px;color: rgb(152, 152, 97); border-radius: 10px; background-color: rgb(7, 7, 7);"><b>Check</b></button>
+             <p id="ss"></p>
+            <script>
+                function fun(){
+                    let d = Math.floor(Math.random()*10);
+                    let quotes = [
+                    'The only way to do great work is to love what you do. - Steve Jobs',
+                    'In three words I can sum up everything I\'ve learned about life: It goes on. - Robert Frost',
+                    'To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment. - Ralph Waldo Emerson',
+                    'Be the change that you wish to see in the world. - Mahatma Gandhi',
+                    'It is never too late to be what you might have been. - George Eliot',
+                    'Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill',
+                    'To live is the rarest thing in the world. Most people exist, that is all. - Oscar Wilde',
+                    'The only limit to our realization of tomorrow is our doubts of today. - Franklin D. Roosevelt',
+                    'Life is what happens when you\'re busy making other plans. - John Lennon',
+                    'Do not go where the path may lead, go instead where there is no path and leave a trail. - Ralph Waldo Emerson'
+                    ];
+                    document.getElementById("ss").innerHTML = quotes[d];
+                    document.getElementById("ss").style.fontSize = "25px";
+                    document.getElementById("ss").style.padding = "20px";
+                    document.getElementById("ss").style.color = "skyblue";
+                }
+            </script>
+    </div>
+    </body>
+</html>
